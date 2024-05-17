@@ -12,7 +12,7 @@ def statisticsRectangle(length, breadth) {
 
 // println perimeterRectangle(3.2, 3.0)
 // println perimeterRectangle(['length': 3.2, 'breadth': 3.0])
-println perimeterRectangle('length': 3.2, 'breadth': 3.0)
+def p1 = perimeterRectangle 'length': 3.2, 'breadth': 3.0
 println perimeterRectangle('breadth': 3.0, 'length': 3.2)
 
 /* def l = 5
