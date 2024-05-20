@@ -2,42 +2,32 @@ package com.r.colllege.domain
 
 // groovy bean
 // class ---> Class object --> 1 per class
-class Student {
+class Student extends CollegeUser {
     // instance variables
     // properties
-    String name
-    Character gender
     Integer roll
-    List<String> contactNos
 
     // static variables
     static Integer count = 0
+
+    Integer setRoll(Integer roll) {
+        if (roll >= 1) {
+            this.roll = roll
+        }
+        this.roll
+    }
 
     Student() {
         Student.count += 1
     }
 
     // instance methods
+    // Method overriding
     Void displayDetails() {
         // current object ---> this
-        println "Name: ${this.name}\nGender: ${this.gender}\nRoll: ${this.roll}"
+        super.displayDetails()
+        println "\nRoll: ${this.roll}"
         // println "Name: ${name}\nGender: ${gender}\nRoll: ${roll}"
-    }
-
-    Void printContactNos() {
-        // this.contactNos.each {println it}
-        // null safe operator (?.)
-        for (def i = 0; i < this.contactNos?.size(); i++) {
-            println this.contactNos[i]
-        }
-    }
-
-    List addContact(String contactNo) {
-        if(this.contactNos == null) {
-            this.contactNos = []
-        }
-
-        this.contactNos << contactNo
     }
 
     // static methods

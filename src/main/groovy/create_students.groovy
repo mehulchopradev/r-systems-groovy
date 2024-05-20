@@ -1,3 +1,4 @@
+import com.r.colllege.domain.Professor
 import com.r.colllege.domain.Student
 
 println Student.count // 0
@@ -14,10 +15,16 @@ s1.contactNos = ['9867896896', '987689696'] */
 println Student.count // 1
 
 def s2 = new Student(name: 'jane', roll: 23, gender: 'f')
-s2.addContact('786867858')
-s2.addContact('98798769')
+s2 << '786867858' << '98798769' // Internally s2.leftShift('786867858')
+s2.gender = 'x' // internally s2.setGender('x')
+// s2.setGender('x')
+println s2.gender // M | F // internally s2.getGender()
+s2.roll = 12 // Internally s2.setRoll(-1)
 
-s1.addContact('889687687')
+// s2.addContact('786867858')
+// s2.addContact('98798769')
+
+// s1.addContact('889687687')
 /* def s2 = new Student()
 s2.name = 'jane'
 s2.roll = 23
@@ -31,13 +38,18 @@ println s2.name
 println s2.gender */
 
 // s1.displayDetails()
-// s2.displayDetails()
+s2.displayDetails()
 
 // s1.printContactNos()
-s2.printContactNos()
+// s2.printContactNos()
 
 
 // println Student.count // 2
+
+def p1 = new Professor(name: 'mehul', gender: 'm', subjects: ['Physics','Chemistry'], contactNos: ['97868768765'])
+p1 << '87867868'
+// println p1.contactNos
+p1.displayDetails()
 
 
 
