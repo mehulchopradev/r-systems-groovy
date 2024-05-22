@@ -1,3 +1,4 @@
+import com.abc.salary.SalaryCalculator
 import com.r.colllege.domain.Professor
 import com.r.colllege.domain.Student
 
@@ -46,10 +47,23 @@ s2.displayDetails()
 
 // println Student.count // 2
 
-def p1 = new Professor(name: 'mehul', gender: 'm', subjects: ['Physics','Chemistry'], contactNos: ['97868768765'])
+def p1 = new Professor(
+        name: 'mehul',
+        gender: 'm',
+        subjects: ['Physics','Chemistry'],
+        contactNos: ['97868768765'],
+        perDayCost: 5000,
+        noOfDaysInMonth: 16
+)
 p1 << '87867868'
 // println p1.contactNos
 p1.displayDetails()
+
+println p1.calculate()
+
+// println SalaryCalculator.calculate(p1)
+
+
 
 
 

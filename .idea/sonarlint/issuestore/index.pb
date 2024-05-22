@@ -1,8 +1,4 @@
 
-<
-build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
-N
-src/main/groovy/evenodd.groovy,3/9/397858010c0d9c4bec3888c721b5a0501ccc7824
 M
 src/main/groovy/grader.groovy,1/4/14aafa9fdc877a6ff25f19b45c226485d5167fc8
 M
@@ -35,14 +31,6 @@ c
 3src/main/groovy/com/r/banking/domain/Account.groovy,1/e/1e5e865ad4aa2e7b5dd45c8307d8bdbd69ddade3
 V
 &src/main/groovy/create_accounts.groovy,2/8/28ac0cb98e6319e7a8c790e3c7c0131f6125322f
-V
-&src/main/groovy/create_students.groovy,1/4/141d5eef5bb7a12b12f074d59d2dd2bb420f2fe8
-f
-6src/main/groovy/com/r/colllege/domain/Professor.groovy,e/3/e39d1a4f6db4906d02f63c2ec41c5b48a26ad8f2
-h
-8src/main/groovy/com/r/colllege/domain/CollegeUser.groovy,f/d/fd3b023151f2c92978505bb20c4b9d2e4d66ba9c
-d
-4src/main/groovy/com/r/colllege/domain/Student.groovy,a/4/a42409b3084111067de2e0019ce4d88576b994a9
 ]
 -src/main/groovy/com/abc/geometry/Shape.groovy,a/8/a854b3b658756dd19b0633188b5f1e399cda71a6
 c
